@@ -7,10 +7,10 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
 body{:#fafafa;color:#333}
 header{background:#F88379;color:white;padding:20px;text-align:center}
-nav{background:#F32413;padding:10px;text-align:center}
+nav{background:#F44031;padding:10px;text-align:center}
 nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
 nav a:hover{text-decoration:underline}
-.hero{background:url('images/firstAds.jpg') center/cover;height:350px;display:flex;align-items:center;justify-content:center;color:white;text-shadow:2px 2px 5px black}
+
 .hero h1{font-size:42px;background:rgba(0,0,0,0.4);padding:15px;border-radius:10px}
 .container{padding:40px 20px;max-width:1100px;margin:auto}
 .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
@@ -25,7 +25,7 @@ button{background:#c2185b;color:white;border:none;padding:12px 20px;border-radiu
 button:hover{background:#ad1457}
 .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
 .site-header{
-  background:#FBBCB6;
+  background:#FDDDDB;
   color:white;
   padding:30px;
   text-align:center;
@@ -64,11 +64,63 @@ button:hover{background:#ad1457}
 <a href="#contact">Contact</a>
 </nav>
 <section class="hero" id="home">
-<h1>Your Style, Our Stitch</h1>
+
 </section>
 
 <section class="container" id="services">
 <section class="container" id="gallery">
+
+
+
+<div class="slider">
+  <img src="images/works/Work1.jpg" class="slide active">
+  <img src="images/works/Work2.jpg" class="slide">
+  <img src="images/works/Work3.jpg">
+
+  <div class="text">Your Style or Stitch</div>
+</div>
+
+<style>
+.slider{
+  position:relative;
+  width:100%;
+  height:300px;
+  overflow:hidden;
+}
+
+.slide{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:0;
+  animation:slideShow 9s infinite;
+}
+
+.slide:nth-child(1){ animation-delay:0s; }
+.slide:nth-child(2){ animation-delay:3s; }
+.slide:nth-child(3){ animation-delay:6s; }
+
+@keyframes slideShow{
+  0%{opacity:0;}
+  10%{opacity:1;}
+  30%{opacity:1;}
+  40%{opacity:0;}
+  100%{opacity:0;}
+}
+
+.text{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  color:white;
+  font-size:28px;
+  font-weight:bold;
+}
+</style>
+
+
+
 <h2>Our Works</h2><br>
 <div class="gallery">
 <img src="images/works/Work1.jpg">
