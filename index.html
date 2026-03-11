@@ -3,12 +3,39 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Azmin Stitching Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
-body{:#fafafa;color:#333}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Play', sans-serif;
+}
+
+body{:#F7A6A6;color:#333}
 header{background:#F88379;color:white;padding:20px;text-align:center}
-nav{background:#F44031;padding:10px;text-align:center}
-nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
+nav{background: linear-gradient(#D1A1A1,#FFC9E3,#D1A1A1);padding:15px;text-align:center}
+nav a{
+display:inline-block;
+background: linear-gradient(#F7C8C8,#FFB0B0);
+padding:10px 18px;
+margin:5px;
+border-radius:8px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+transition:0.3s;
+box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+nav a:hover{
+background:#ff8fa3;
+color:white;
+transform:translateY(-5px);
+box-shadow:0 8px 15px rgba(0,0,0,0.3);
+}0
 nav a:hover{text-decoration:underline}
 
 .hero h1{font-size:42px;background:rgba(0,0,0,0.4);padding:15px;border-radius:10px}
@@ -23,9 +50,15 @@ nav a:hover{text-decoration:underline}
 footer{background:#880e4f;color:white;text-align:center;padding:15px;margin-top:30px}
 button{background:#c2185b;color:white;border:none;padding:12px 20px;border-radius:8px;cursor:pointer}
 button:hover{background:#ad1457}
+
+
+
 .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
+
+
+
 .site-header{
-  background:#FFDAB9;
+  background: linear-gradient(#FF7E57,#BAB5DC,#FFAB4A);
   color:white;
   padding:30px;
   text-align:center;
@@ -43,7 +76,7 @@ button:hover{background:#ad1457}
 <body>
 <header class="site-header">
   <img src="images/azmin icon og.png" alt="images/azmin icon old.png" class="logo">
-  <p class="tagline">Perfect Fit • Elegant Style • Custom Designs<style>
+  <p class="tagline"><b>Perfect Fit • Elegant Style • Custom Designs</b><style>
   ...
   .logo{
     max-width:220px;
@@ -51,13 +84,12 @@ button:hover{background:#ad1457}
     height:auto;
   }
 .tagline{
-  color:#000000;
+  color:#595757;
 }
 </style></p>
-
+<br><br>
 <nav>
 <a href="#home">Home</a>
-<a href="#services">Services</a>
 <a href="#gallery">Gallery</a>
 <a href="#stock">Stock</a>
 <a href="#booking">Booking</a>
@@ -73,9 +105,11 @@ button:hover{background:#ad1457}
 
 
 <div class="slider">
-  <img src="images/works/Work1.jpg" class="slide active">
-  <img src="images/works/Work2.jpg" class="slide">
-  <img src="images/works/Work3.jpg">
+  <img src="images/ads/s1.jpg" class="slide">
+  <img src="images/ads/s2.png" class="slide">
+  <img src="images/ads/s3.jpg" class="slide">
+  <img src="images/ads/s1.jpg" class="slide">
+  <img src="images/ads/s2.png" class="slide">
 
   <div class="text">YOUR STYLE OUR STITCH</div>
 </div>
@@ -84,22 +118,28 @@ button:hover{background:#ad1457}
 .slider{
   position:relative;
   width:100%;
-  height:300px;
+  height:500px;
   overflow:hidden;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .slide{
   position:absolute;
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;  
   opacity:0;
-  animation:slideShow 9s infinite;
+  animation:slideShow 15s infinite;
 }
 
 .slide:nth-child(1){ animation-delay:0s; }
 .slide:nth-child(2){ animation-delay:3s; }
 .slide:nth-child(3){ animation-delay:6s; }
+.slide:nth-child(4){ animation-delay:9s; }
+.slide:nth-child(5){ animation-delay:12s; }
 
 @keyframes slideShow{
   0%{opacity:0;}
@@ -114,7 +154,7 @@ button:hover{background:#ad1457}
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
-  color:#000000;
+  color:#ffad99;
   font-size:34px;
   font-weight:bold;
   text-align:center;
@@ -124,7 +164,6 @@ button:hover{background:#ad1457}
   border-radius:50px;
 
   text-shadow:5px 5px 10px black;
-
   letter-spacing:10px;
   font-family:Arial, sans-serif;
 
@@ -145,10 +184,26 @@ button:hover{background:#ad1457}
 
 </header>
 
+<br><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<a href="https://instagram.com/azmin_stitching" target="_blank">
+<button style="
+background: linear-gradient(45deg,#f58529,#dd2a7b);
+color:white;
+padding:20px 100px;
+border:none;
+border-radius:25px;
+font-size:20px;
+cursor:pointer;
+">
+<i class="fab fa-instagram"></i> Follow us on Instagram
+</button>
+</a>
 
 
 
 
+<br><br>
 
 <h2>Our Works</h2><br>
 <div class="gallery">
@@ -161,38 +216,219 @@ button:hover{background:#ad1457}
 </div>
 </section>
 <section class="container" id="stock">
+
+
+
+
+
 <h2>Available Stock</h2><br>
 
-<div class="services">
 
-<div class="card product" data-stock="in">
 
-<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<div id="productPopup" class="popup">
 
-<img src="images/hi.jpg" width="50%">
+<div class="popup-content">
+
+<span class="close" onclick="closePopup()">×</span>
+
+<img id="popupImage" src="" width="100%">
+
+<h3 id="popupTitle"></h3>
+
+<a id="buyLink" target="_blank">
+<button class="buybtn">Buy Now</button>
+</a>
+
+</div>
+
+</div>
+
+
+
+
+<div class="services" id="productList">
+
+<div class="card product">
+<a href="https://wa.me/917560929272?text=hai,%20I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
 </a>
 <h3>nighty</h3>
 <p>₹200</p>
 </div>
-<div class="card product" data-stock="in">
-<img src="images/grey.jpg" width="50%">
+
+<div class="card product" onclick="openProduct('https://github.com/shanuashmil655-svg/azmin2/blob/main/images/grey.jpg?raw=true','₹200')">
+<img src="images/hi.jpg" width="100%">
+<h3>hi nighty</h3>
+<p>₹200</p>
+</div>
+
+<div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div>
+
+<div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div>
+
+<div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div>
+
+<div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div>
+
+<div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
+<h3>nighty</h3>
+<p>₹200</p>
+</div><div class="card product">
+<a href="https://wa.me/917560929272?text=I%20want%20this%20nighty%20https://shanuashmil655-svg.github.io/azmin2/images/hi.jpg" target="_blank">
+<img src="images/hi.jpg" width="100%">
+</a>
 <h3>nighty</h3>
 <p>₹200</p>
 </div>
 
 </div>
-</section>
-<br><br>
-<a href="https://instagram.com/azmin_stitching" target="_blank">
-<button style="
-background:#E1306C;
+
+
+
+
+<style>
+
+
+
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+padding:20px;
+max-width:400px;
+text-align:center;
+border-radius:10px;
+}
+
+.popup-content img{
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.close{
+font-size:25px;
+cursor:pointer;
+float:right;
+}
+
+.buybtn{
+background:#25D366;
 color:white;
 padding:12px 25px;
 border:none;
+border-radius:6px;
+font-size:18px;
+cursor:pointer;
+}
+
+</style>
+
+
+
+
+
+
+
+</div>
+</section>
+<br><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<a href="https://instagram.com/azmin_stitching" target="_blank">
+<button style="
+background: linear-gradient(45deg,#f58529,#dd2a7b);
+color:white;
+padding:20px 100px;
+border:none;
 border-radius:25px;
-font-size:16px;
-cursor:pointer;">
-Follow us on Instagram
+font-size:25px;
+cursor:pointer;
+">
+<i class="fab fa-instagram"></i> Follow us on Instagram
 </button>
 </a>
 
@@ -215,10 +451,112 @@ Follow us on Instagram
 <div class="card"><h3>Custom Design</h3><p>Bring your design ideas and we stitch it beautifully.</p></div>
 </div>
 </section>
-<a class="whatsapp" href="https://wa.me/917560929272" target="_blank">WhatsApp</a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<a href="https://wa.me/917560929272?text=Hai%20Ashmina,%20i%20want%20to%20know%20more%20about%20your%20products." class="whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+<style>
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:12px 18px;
+border-radius:30px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+text-decoration:none;
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{
+box-shadow:0 0 0 0 rgba(37,211,102,0.7);
+}
+70%{
+box-shadow:0 0 0 15px rgba(37,211,102,0);
+}
+100%{
+box-shadow:0 0 0 0 rgba(37,211,102,0);
+}
+}
+
+.whatsapp i{
+margin-right:8px;
+font-size:18px;
+}
+</style>
 <footer>
 <p>© 2026 Azmin Stitching Studio | All Rights Reserved</p>
 </footer>
+
+
+
+
+
+
+<script>
+
+function openProduct(img,name){
+
+document.getElementById("productPopup").style.display="flex";
+
+document.getElementById("popupImage").src=img;
+
+document.getElementById("popupTitle").innerText=name;
+
+document.getElementById("buyLink").href=
+"https://wa.me/917560929272?text=I want "+name;
+
+}
+
+function closePopup(){
+document.getElementById("productPopup").style.display="none";
+}
+
+</script>
+<script>
+
+function openProduct(img,name){
+
+document.getElementById("productPopup").style.display="flex";
+
+document.getElementById("popupImage").src=img;
+
+document.getElementById("popupTitle").innerText=name;
+
+document.getElementById("buyLink").href=
+"https://wa.me/917560929272?text=I want "+name+" "+img;
+
+}
+
+function closePopup(){
+document.getElementById("productPopup").style.display="none";
+}
+
+/* BACKGROUND CLICK CLOSE */
+
+window.onclick = function(event) {
+
+let popup = document.getElementById("productPopup");
+
+if (event.target == popup) {
+
+popup.style.display = "none";
+
+}
+
+}
+
+</script>
+
+
+
+
 </body>
 </html>
